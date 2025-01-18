@@ -6,3 +6,96 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+/* dark 02 */
+.text-gray{
+    color:rgba(66, 66, 66, 1) ;
+}
+
+/* dark 03 */
+.text-light-gray{
+  color: #727272;  
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 20px 25px ; /* 20px for top & bottom and 25px for left & right padding */
+    font-size: 1.2rem;
+    font-weight: 600; /* semi bold font */
+    border-radius: 8px;
+    border: none;
+}
+
+/* header styles */
+
+
+
+/* navbar styles */
+ .navbar{
+    justify-content: space-between;
+    align-items: center; /* as the nav items allignment scattered */
+} 
+
+.brand{
+    font-weight: 700; /*for bold font */
+    font-size: 3rem; /* rem better than px 1rem=16px */
+}
+
+.nav-links{
+   display: flex; 
+} 
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px; 
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner related styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%; /* whatever the page size, image will be adjusted */
+}
+
+/* to make responsive, 5 things has to think */
+/* 1. Break-Point (BP)
+   2. Media Query
+   3. Style
+   4. Image, Navbar, Font, Size
+   5. Test                                   */
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .navbar, .nav-links{
+        flex-direction: column; /* find all flex and convert to column */
+    }
+}
